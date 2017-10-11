@@ -10,7 +10,7 @@ function onReady() {
 
     let newLi = document.createElement('li');
 
-    let checkbox = documnet.createElement('input');
+    let checkbox = document.createElement('input');
 
     checkbox.type = "checkbox";
 
