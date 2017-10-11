@@ -10,7 +10,11 @@ function onReady() {
 
     let newLi = document.createElement('li');
 
-    let checkbox = documnet.createElement('input');
+    let checkbox = document.createElement('input');
+
+    let removeButton = document.createElement('input');
+    removeButton.type = "button";
+    removeButton.value = "Delete To-Do!"
 
     checkbox.type = "checkbox";
 
@@ -18,9 +22,16 @@ function onReady() {
 
     newLi.appendChild(checkbox);
 
+    newLi.appendChild(removeButton);
+
     toDoList.appendChild(newLi);
 
     newToDoText.value = '';
+
+    removeButton.addEventListener('click', () => {
+      toDoList.removeChild(newLi);
+    });
+
   });
 }
 
