@@ -33,7 +33,7 @@ function onReady() {
   }
 
   addToDoForm.addEventListener('submit', event => {
-    event.preventDefault;
+    event.preventDefault();
     createNewToDo();
   });
 
